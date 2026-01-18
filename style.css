@@ -1,0 +1,49 @@
+/* Tailwind Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c4b5fd;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b5cf6;
+}
+
+/* Tailwind Theme Extension (CDN Mode) */
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Custom Colors for Tailwind CDN */
+@layer utilities {
+  .bg-primary-50 { background-color: #f5f3ff; }
+  .bg-primary-100 { background-color: #ede9fe; }
+  .bg-primary-200 { background-color: #ddd6fe; }
+  .bg-primary-300 { background-color: #c4b5fd; }
+  .bg-primary-400 { background-color: #a78bfa; }
+  .bg-primary-500 { background-color: #8b5cf6; }
+  .bg-primary-600 { background-color: #7c3aed; }
+  .bg-primary-700 { background-color: #6d28d9; }
+  .bg-primary-800 { background-color: #5b21b6; }
+  .bg-primary-900 { background-color: #4c1d95; }
+
+  .text-primary-600 { color: #7c3aed; }
+  .text-primary-700 { color: #6d28d9; }
+}
